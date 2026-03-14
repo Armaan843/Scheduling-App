@@ -1,0 +1,110 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(216, 216, 213);
+}
+
+button {
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(25, 103, 106);
+    color: rgb(227, 225, 227);
+    border: solid;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#page_used {
+    width: 840px;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+#days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+ 
+}
+
+.box_day {
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(12, 195, 205);
+    height: 100px;
+    background: white;
+    z-index: 50;
+    position: relative
+}
+
+.box_day:hover {
+    cursor: pointer;
+}
+
+.task_box_zone {
+    top: 10px;
+    padding-right: 5px;
+    padding-right: 5px;
+}
+
+.task_box {
+    background-color: rgb(65, 184, 93);
+    font-size: 12px;
+    margin: 2px;
+}
+
+#today {
+    border-color: red;
+    background-color: rgb(113, 193, 186);
+    border-width: 1px;
+}
+
+#pop_up {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #807979;
+    width: 50%;
+    height: 330px;
+    padding: 30px;
+    display: none;
+    z-index:100;
+}
+
+#task_zone {
+    top: 50px;
+}
+
+.task {
+    padding: 8px;
+    margin: 3px;
+    border-radius: 4px;
+    background-color: aqua;
+    font-size: 14px;
+    text-align: left;
+}
+
+.task:hover {
+    cursor: pointer;
+    opacity: 70%;
+    background: red;
+}
